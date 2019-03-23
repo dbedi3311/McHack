@@ -1,0 +1,71 @@
+
+$black: #010000;
+$white: #ffffff;
+$lightGrey: #e6e6e6;
+$darkGrey: #858585;
+$red: #ff1755;
+$green: #558C89;
+
+@mixin translateY($e){
+  -webkit-transform: translateY($e);
+  -moz-transform: translateY($e);
+  transform: translateY($e);
+}
+
+@mixin transition($e){
+  -webkit-transform:$e;
+  -moz-transform:$e;
+  transition:$e;
+}
+
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: $black;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+a{
+  text-decoration: none;
+  @include transition(.4s ease-in-out);
+  cursor: pointer;
+
+  &:hover{
+    color:$darkGrey;
+    text-decoration: none;
+    @include transition(.4s ease-in-out);
+  }
+  &:visited{
+    color: $white;
+    text-decoration: none;
+    background-color: $white;
+  }
+  &:active{
+    color: $white;
+    text-decoration: none;
+    background-color: $white;
+  }
+  &:link{
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+Link{
+  text-decoration: none;
+  &:visited{
+    color: $white;
+    text-decoration: none;
+  }
+  &:active{
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.container-fluid{
+  line-height: 24px;
+}
