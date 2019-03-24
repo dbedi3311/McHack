@@ -3,9 +3,7 @@ import React, { Component } from 'react';
 class Report extends Component {
   render() {
     return (
-      <div className="container-fluid">
-      Report
-      </div>
+      <img src={require('C:/Users/dbedi/Desktop/TrashTracker McHack/test-app/src/report.png')} height="400" />
     );
   }
 }

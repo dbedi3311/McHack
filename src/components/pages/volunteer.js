@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-
+import Map from '../mapComponent/map'
 class Volunteer extends Component {
   render() {
     return (
-      <div className="container-fluid">
-      Volunteer
-      </div>
+      <Map />
+      
     );
   }
 }

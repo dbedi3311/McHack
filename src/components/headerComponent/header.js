@@ -15,13 +15,13 @@ class Header extends Component {
 
           <ul>
             <li className="first">
-              <Link to="/" style={{ textDecoration: 'none', color:'white'}}>Home</Link>
+              <Link to="/" style={{ textDecoration: 'none'}}>Home</Link>
             </li>
             <li>
-              <Link to="/Report">Report</Link>
+              <Link to="/Report" style={{ textDecoration: 'none'}}>Report</Link>
             </li>
             <li className="last">
-              <Link to="/Volunteer">Volunteer</Link>
+              <Link to="/Volunteer" style={{ textDecoration: 'none'}}>Volunteer</Link>
             </li>
           </ul>
 

@@ -54,18 +54,6 @@ a{
   }
 }
 
-Link{
-  text-decoration: none;
-  &:visited{
-    color: $white;
-    text-decoration: none;
-  }
-  &:active{
-    color: $white;
-    text-decoration: none;
-  }
-}
-
 .container-fluid{
   line-height: 24px;
 }
